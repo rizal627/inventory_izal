@@ -1,10 +1,10 @@
 <?php 
 
-$id_barang=$_GET['id_barang'];
+$id=$_GET['id'];
 
 include '../../config/koneksi.php';
 
-$query = mysqli_query($conn, "DELETE FROM kendaraan WHERE id_kendaraan='$id_barang' ");
+$query = mysqli_query($conn, "DELETE FROM barang WHERE id_barang='$id' ");
 
 if($query){
     echo "<script>alert('Data berhasil dihapus')</script>";

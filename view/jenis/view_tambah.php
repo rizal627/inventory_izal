@@ -16,10 +16,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">jenis</a>
+          <a class="nav-link active" aria-current="page" href="#">barang</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../kendaraan/index.php">barang</a>
+          <a class="nav-link" href="../jenis/index.php">jenis</a>
         </li>
       </ul>
     </div>
@@ -28,17 +28,16 @@
 
 
 <div class="container"> 
-  <h1>Tambah Data jenis rizal</h1>
+  <h1>Tambah Data Jenis Barang Rizal</h1>
 <form action="proses_tambah.php" method="POST">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">ID jenis</label>
-    <input type="int" class="form-control" name="id_parkir" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label for="exampleInputEmail1" class="form-label">ID Jenis</label>
+    <input type="int" class="form-control" name="id_jenis" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">nama jenis</label>
-    <input type="varchar" class="form-control" name="lokasi" id="exampleInputPassword1">
+    <label for="exampleInputPassword1" class="form-label">Nama Jenis</label>
+    <input type="varchar" class="form-control" name="nama_jenis" id="exampleInputPassword1">
   </div>
-  
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>

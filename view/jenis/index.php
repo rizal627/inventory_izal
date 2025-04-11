@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,10 +16,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">jenis</a>
+          <a class="nav-link active" aria-current="page" href="../barang/index.php">barang</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../kendaraan/index.php">barang</a>
+          <a class="nav-link" href="">Jenis</a>
         </li>
       </ul>
     </div>
@@ -27,15 +27,13 @@
 </nav>
 
 <div class="container"> 
-  <h1>Data jenis Rizal</h1>
-  <a href="view_tambah.php" class="btn btn-primary">Tambah Data jenis baru</a>
+  <h1>Data Jenis Barang Rizal</h1>
+  <a href="view_tambah.php" class="btn btn-primary">Tambah Data Jenis Barang Baru</a>
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">ID jenis</th>
-      <th scope="col">nama jenis</th>
-    
+      <th scope="col">ID Jenis</th>
+      <th scope="col">Nama Jenis</th>
       <th>Aksi</th>
     </tr>
   </thead>
@@ -45,15 +43,15 @@
                 $query = mysqli_query($conn, "SELECT * FROM jenis");
                 $no = 1;
 
-                if (mysqli_num_rows($query)) {
-                  echo "Data Jenis ditemukan";
+                if (mysqli_num_rows($query) > 0) {
                     while ($result = mysqli_fetch_assoc($query)) {
                         ?>
                         <tr>
                             <td><?php echo $no; ?></td>
-                            <td><?php echo $result['id_jenis']; ?></td>
+                    
                             <td><?php echo $result['nama_jenis']; ?></td>
-                           
+                            
+
                             <td>
                             <a href="view_edit.php?id=<?php echo $result['id_jenis'] ?>" class="btn btn-warning">Edit</a>
                             <a href="hapus.php?id=<?php echo $result['id_jenis'] ?>" 

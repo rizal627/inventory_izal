@@ -28,27 +28,27 @@
 
 
 <div class="container"> 
-  <h1>Tambah Barang Baru</h1>
-<form action="proses_tambah.php" method="post">
+  <h1>Tambah Data Barang rizal</h1>
+<form action="proses_tambah.php" method="POST">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">id_barang</label>
+    <label for="exampleInputEmail1" class="form-label">ID Barang</label>
     <input type="int" class="form-control" name="id_barang" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">nama_barang</label>
+    <label for="exampleInputPassword1" class="form-label">Nama Barang</label>
     <input type="varchar" class="form-control" name="nama_barang" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">id_jenis</label>
-    <input type="varchar" class="form-control" name="id_jenis" id="exampleInputPassword1">
+    <label for="exampleInputPassword1" class="form-label">ID Jenis</label>
+    <input type="int" class="form-control" name="id_jenis" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">harga</label>
-    <input type="varchar" class="form-control" name="harga" id="exampleInputPassword1">
+    <label for="exampleInputPassword1" class="form-label">Harga</label>
+    <input type="int" class="form-control" name="harga" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">stok</label>
-    <input type="varchar" class="form-control" name="stok" id="exampleInputPassword1">
+    <label for="exampleInputPassword1" class="form-label">Stok</label>
+    <input type="int" class="form-control" name="stok" id="exampleInputPassword1">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
